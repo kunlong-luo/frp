@@ -2,6 +2,7 @@
 
 FRP_VERSION="0.31.2"
 FRP_DIR="/usr/local/frpc"
+SERVICE_DIR="/lib/systemd/system"
 REPO="tony-parker-luo/frp"
 WD="/tmp"
 
@@ -15,7 +16,7 @@ cd frp_${FRP_VERSION}_linux_amd64 && \
 mv frpc frpc.ini ${FRP_DIR}
 
 # download frpc.service
-wget -P ${WD}
+wget -P ${SERVICE_DIR} https://raw.githubusercontent.com/${REPO}/master/frpc/frpc.service
 systemctl daemon-reload
 
 # start frpc

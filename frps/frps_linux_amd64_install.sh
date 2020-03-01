@@ -2,7 +2,8 @@
 
 FRP_VERSION="0.31.2"
 FRP_DIR="/usr/local/frps"
-REPO="tony-parker-luo/frps"
+SERVICE_DIR="/lib/systemd/system"
+REPO="tony-parker-luo/frp"
 WD="/tmp"
 
 # create frps directory
@@ -15,7 +16,7 @@ cd frp_${FRP_VERSION}_linux_amd64 && \
 mv frps frps.ini ${FRP_DIR}
 
 # download frps.service
-wget -P ${WD}
+wget -P ${SERVICE_DIR} https://raw.githubusercontent.com/${REPO}/master/frps/frps.service
 systemctl daemon-reload
 
 # start frps
