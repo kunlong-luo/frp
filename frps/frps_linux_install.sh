@@ -26,3 +26,10 @@ sudo systemctl enable frps
 # delete redundant file
 cd ${WD} && \
 rm -rf frp_${FRP_VERSION}_linux_${ARCH} frp_${FRP_VERSION}_linux_${ARCH}.tar.gz frps_linux_install.sh
+
+echo "=======================================================" &&\
+echo -e "\033[32mFRPS Install Success!\033[0m" && \
+echo -e "\033[31mfrps: ${FRP_DIR}/frps\033[0m" && \
+echo -e "\033[31mconf: ${FRP_CONF_DIR}/frps.ini\033[0m" && \
+echo -e "\033[32mfrps.service: ${SERVICE_DIR}/frps.service\033[0m" && \
+echo "======================================================="

@@ -15,3 +15,4 @@ sudo rm -rf /etc/frp
 # delete this file
 sudo rm -rf /tmp/frps_linux_uninstall.sh
 
+echo -e "\033[32mFRPS Uninstall Success!\033[0m"
