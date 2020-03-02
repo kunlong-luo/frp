@@ -31,5 +31,5 @@ echo "=======================================================" &&\
 echo -e "\033[32mFRPC Install Success!\033[0m" && \
 echo -e "\033[31mfrpc: ${FRP_DIR}/frpc\033[0m" && \
 echo -e "\033[31mconf: ${FRP_CONF_DIR}/frpc.ini\033[0m" && \
-echo -e "\033[32mfrpc.service: ${SERVICE_DIR}/frpc.service\033[0m" && \
+echo -e "\033[31mfrpc.service: ${SERVICE_DIR}/frpc.service\033[0m" && \
 echo "======================================================="
