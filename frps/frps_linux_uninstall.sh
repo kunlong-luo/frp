@@ -13,5 +13,5 @@ sudo rm -rf /lib/systemd/system/frps.service
 sudo rm -rf /etc/frp
 
 # delete this file
-sudo rm -rf /tmp/frps_linux_amd64_uninstall.sh
+sudo rm -rf /tmp/frps_linux_uninstall.sh
 
