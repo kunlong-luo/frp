@@ -16,7 +16,7 @@ tar -zxvf frp_${FRP_VERSION}_linux_${ARCH}.tar.gz && \
 cd frp_${FRP_VERSION}_linux_${ARCH} && \
 sudo cp frpc ${FRP_DIR} && \
 sudo cp frpc.ini ${FRP_CONF_DIR} && \
-sudo cp ${WD}/frp_${FRP_VERSION}_linux_${ARCH}/frpc.service ${SERVICE_DIR} && \
+sudo cp ${WD}/frp_${FRP_VERSION}_linux_${ARCH}/systemd/frpc.service ${SERVICE_DIR} && \
 sudo systemctl daemon-reload
 
 # start frpc
