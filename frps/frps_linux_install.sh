@@ -2,8 +2,8 @@
 
 FRP_VERSION="0.31.2"
 ARCH="amd64"
-FRP_DIR="/usr/bin/"
-FRP_CONF_DIR="/etc/frp/"
+FRP_DIR="/usr/bin"
+FRP_CONF_DIR="/etc/frp"
 SERVICE_DIR="/lib/systemd/system"
 WD="/tmp"
 
