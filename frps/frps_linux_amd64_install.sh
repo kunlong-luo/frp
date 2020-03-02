@@ -15,8 +15,7 @@ tar -zxvf frp_${FRP_VERSION}_linux_amd64.tar.gz && \
 cd frp_${FRP_VERSION}_linux_amd64 && \
 sudo cp frps ${FRP_DIR} && \
 sudo cp frps.ini ${FRP_CONF_DIR} && \
-cd system && \
-sudo cp frps.service ${SERVICE_DIR} && \
+sudo cp ${WD}/frp_${FRP_VERSION}_linux_amd64/frps.service ${SERVICE_DIR} && \
 sudo systemctl daemon-reload
 
 # start frps
