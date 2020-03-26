@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-FRP_VERSION="0.31.2"
+FRP_VERSION="0.32.0"
 ARCH="amd64"
 FRP_DIR="/usr/bin"
 FRP_CONF_DIR="/etc/frp"
