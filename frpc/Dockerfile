@@ -17,7 +17,7 @@ RUN cd $WD \
     && mkdir -p ${FRP_CONF_DIR} \
     && cp frpc.ini ${FRP_CONF_DIR} \
     && cd ${WD} \
-    && rm -rf frp_${FRP_VERSION}_linux_${ARCH} frp_${FRP_VERSION}_linux_${ARCH}/ \
-    && rm frp_${FRP_VERSION}_linux_${ARCH} frp_${FRP_VERSION}_linux_${ARCH}.tar.gz
+    && rm -rf frp_${FRP_VERSION}_linux_${ARCH}/ \
+    && rm frp_${FRP_VERSION}_linux_${ARCH}.tar.gz
 
 ENTRYPOINT ${FRP_DIR}/frpc -c ${FRP_CONF_DIR}/frpc.ini

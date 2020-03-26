@@ -33,3 +33,15 @@ chmod +x frpc_linux_uninstall.sh && \
 ```
 
 
+## frp server installation with Docker
+```bash
+docker pull tony-parker-luo/frps
+```
+
+## frp client installation with Docker
+```bash
+docker pull tony-parker-luo/frpc
+```
+
+
+
