@@ -9,6 +9,7 @@ ENV FRP_VERSION="0.32.0" \
     WD="/tmp"
 
 RUN cd $WD \
+    && yum update -y \
     && yum install -y wget \
     && wget --no-check-certificate -c -P ${WD} https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${ARCH}.tar.gz \
     && tar -zxvf frp_${FRP_VERSION}_linux_${ARCH}.tar.gz \

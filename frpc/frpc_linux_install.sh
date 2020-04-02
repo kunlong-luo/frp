@@ -11,7 +11,7 @@ WD="/tmp"
 sudo mkdir -p ${FRP_CONF_DIR}
 
 # download frp package
-wget -P ${WD} https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${ARCH}.tar.gz && \
+wget --no-check-certificate -c -P ${WD} https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${ARCH}.tar.gz && \
 tar -zxvf frp_${FRP_VERSION}_linux_${ARCH}.tar.gz && \
 cd frp_${FRP_VERSION}_linux_${ARCH} && \
 sudo cp frpc ${FRP_DIR} && \
